@@ -2,7 +2,7 @@
  * Duel Fight Game - FINISHED
  * Date: 4/09/13
  * Flavio Cassini
- * Date: 4/30/2015
+ * Date: 10/30/2015
  * Instructor Garlic
  * Class 1511
  * Assignment Duel 1
