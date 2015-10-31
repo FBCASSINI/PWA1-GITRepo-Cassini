@@ -61,7 +61,7 @@ PWA-O
 			
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
-			for(var ii=0, jj=queryArray.length; ii<jj; ii++){ //does not need semi colons needs commas
+			for(var ii=0, jj=queryArray.length; ii<jj; ii++){ 
 				var qitem = queryArray[ii].tolowercase();
 				
 				// is the keyword anywhere in the video title?
