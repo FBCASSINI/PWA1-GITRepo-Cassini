@@ -25,10 +25,10 @@ PWA-O
 		// Trim whitespace from start and end of search query
 		while(query.charAt(0) = " "){
 			query = query.substring(1, query.length);
-		};
+		}; // unnecessary semi colon
 		while(query.charAt(query.length-1) === ""){
 			query = query.substring(0, query.length-1);
-		; //needs bracket } to close  while loop
+		; //needs bracket } to close  while loop. unnecessary semi colon
 		
 		// Check search length, must have 3 characters
 		if(query.length < 3){
@@ -37,13 +37,13 @@ PWA-O
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
 			searchInput.focus();
 			return;
-		};
+		}; //unnecessary semi colon
 		
 		search(query);
 	}
-	
+
 	// Finds search matches
-	var search = function(query) //needs semi colon here
+	var search = function(query) //Needs bracket }
 		
 		// split the user's search query string into an array
 		var queryArray = query.join(" ");
@@ -61,17 +61,19 @@ PWA-O
 			
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
-			for(var ii=0, jj=queryArray.length; ii<jj; ii++){ 
+			for(var ii=0, jj=queryArray.length; ii<jj; ii++) {
 				var qitem = queryArray[ii].tolowercase();
-				
+
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
 				var compare = dbitem.indexOf(qitem);
-				if(compare !== -1){
+				if (compare !== -1) {
 					results.push(db[i]);
-				};
-			;  //Needs } to close the loop
-		; //needs bracket } to close the loop
+				}
+				; //unnecessary semi colon
+				;  //Needs } to close the loop // unnecessary semi colon
+			; //needs bracket } to close the loop // unnecessary semi colon
+
 		
 		results.sort();
 		
@@ -80,17 +82,17 @@ PWA-O
 			noMatch();
 		}else{
 			showMatches(results);
-		};
-	};
+		}; //unnecessary semi colon
+	}; // unnecessary semi colon
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
 	var noMatch = function(){
 		var html = ''+
 			'<p>No Results found.</p>'+
-			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'//Semi colin is in wrong place needs to be in front of try and after idea.
-		; // this semi colon can be put after </p> for better practice
+			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'//Semi colon is in wrong place needs to be in front of try and after idea.
+		;
 		resultsDIV.innerHTML = html;
-	};
+	}; //unnecessary semi colon
 	
 	// Put matches into page as paragraphs with anchors
 	var showMatches = function(results){
