@@ -1,3 +1,15 @@
+/*
+
+Flavio Cassini
+10/31/2015
+Class 1511
+Instructor Garlic
+Assignment Goal 3 DEBUG
+PWA-O
+ */
+
+
+
 // Create privatized scope using a self-executing function
 (function(){
 	
