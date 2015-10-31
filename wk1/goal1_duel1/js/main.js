@@ -5,6 +5,7 @@
  * Date: 4/30/2015
  * Instructor Garlic
  * Class 1511
+ * Assignment Duel 1
 
  Assignment 1
  Part 1/3 of series
