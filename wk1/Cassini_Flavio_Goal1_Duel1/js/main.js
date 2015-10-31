@@ -2,9 +2,10 @@
  * Duel Fight Game - FINISHED
  * Date: 4/09/13
  * Flavio Cassini
- * Date: 4/30/2015
+ * Date: 10/30/2015
  * Instructor Garlic
  * Class 1511
+ * Assignment Duel 1
 
  Assignment 1
  Part 1/3 of series
@@ -24,7 +25,7 @@
     var player2Damage = 20; //variable player2damage = 20. this variable will deduct 20points when called upon.
 
     //player health
-    var playerOneHealth = 100; //variable player health = 100. The varaible will start the players at 100points
+    var playerOneHealth = 100; //variable player health = 100. The variable will start the players at 100points
     var playerTwoHealth = 100;
 
     //initiate round
@@ -32,7 +33,7 @@
 
     function fight(){ //This function will excute fight when called upon.
         alert(playerOneName+":"+playerOneHealth+"  *START*  "+playerTwoName+":"+playerTwoHealth); //This alert box will pop up when javascript is run and will notify in the box the players name and  health with the start button in the middile using string conatination.
-        for (var i = 0; i < 10; i++) //for loop executes and checks if it looped 10 times meaning 10 rounds then class winner check. variable i = rounds. i < 10 notifys the script if 10 has been reached, i++ adds to i by 1 point every round until reached 10 rounds.
+        for (var i = 0; i < 10; i++) //for loop executes and checks if it looped 10 times meaning 10 rounds then class winner check. variable i = rounds. i < 10 notifies the script if 10 has been reached, i++ adds to i by 1 point every round until reached 10 rounds.
         {
             //random formula is - Math.floor(Math.random() * (max - min) + min);
             var minDamage1 = player1Damage * .5; // minimum damage is .5 to player one from 20 = 10 . to made a between 10-20 damage point per round.
@@ -64,7 +65,7 @@
 
     function winnerCheck(){
         var result="no winner";
-        if (playerOneHealth<1 && playerTwoHealth<1) //conditinal statemnet to compare playeronehealth and playtwo health is less then one
+        if (playerOneHealth<1 && playerTwoHealth<1) //conditional statement to compare playeronehealth and playertwo health is less then one
         {
             result = "You Both Die"; //candition is true they both die
         } else if(playerOneHealth<1){//else if playerone health  is less then 1 , playertwo wins
