@@ -17,8 +17,8 @@
     console.log("FIGHT!!!"); //console.log the word fight
 
     //player name
-    var playerOneName = "Spiderman";  //variable playeronename is spiderman this will display spiderman when javascript loads
-    var playerTwoName = "Batman";   //variable payertwoname = batman. this will display spiderman when javascript loads
+    var fighterOne = ["Spiderman", 20, 100];  //variable playeronename is spiderman this will display spiderman when javascript loads
+    var fighterTwo = ["Batman", 20, 100];   //variable payertwoname = batman. this will display spiderman when javascript loads
 
     //player damage
     var player1Damage = 20; //variable player1damage =20. this varaible will deduct 20points when called.
