@@ -65,14 +65,14 @@
 
     function winnerCheck(){
         var result="no winner";
-        if (playerOneHealth<1 && playerTwoHealth<1) //conditional statement to compare playeronehealth and playertwo health is less then one
+        if (fighterOne[2]<1 && fighterTwo[2]<1) //conditional statement to compare playeronehealth and playertwo health is less then one
         {
             result = "You Both Die"; //candition is true they both die
-        } else if(playerOneHealth<1){//else if playerone health  is less then 1 , playertwo wins
-            result =playerTwoName+" WINS!!!"// Playertwo wins
-        } else if (playerTwoHealth<1)////else if playertwo health  is less  then 1 playerone wins
+        } else if(fighterOne[2]<1){//else if playerone health  is less then 1 , playertwo wins
+            result =fighterTwo[0]+" WINS!!!"// Playertwo wins
+        } else if (fighterTwo[2]<1)////else if playertwo health  is less  then 1 playerone wins
         {
-            result = playerOneName+" WINS!!!" //playerone wins
+            result = fighterOne[0]+" WINS!!!" //playerone wins
         };
        return result; //  exits out of function returns result to winnercheck.
     };
