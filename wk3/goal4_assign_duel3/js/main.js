@@ -11,13 +11,13 @@
 */
 
 // self-executing function
-(function(){  // self executing function
+ (function(){  // self executing function
 
-    console.log("FIGHT!!!"); //console.log the word fight
+    //console.log("FIGHT!!!"); //console.log the word fight
 
     //player name
-    var fighterOne = {'name':'Spiderman', 'damage':20, 'health':100};  //variable playeronename is spiderman this will display spiderman when javascript loads
-    var fighterTwo = {'name':'Batman','damage':20, 'health':100};   //variable payertwoname = batman. this will display spiderman when javascript loads
+    var fighterOne = {'name':'kabel', 'damage':20, 'health':100};  //variable playeronename is spiderman this will display spiderman when javascript loads
+    var fighterTwo = {'name':'kratos','damage':20, 'health':100};   //variable payertwoname = batman. this will display spiderman when javascript loads
 
     //player damage
     //var player1Damage = 20; //variable player1damage =20. this varaible will deduct 20points when called.
@@ -30,10 +30,11 @@
     //initiate round
     var round=0;  //This variable will start the round and keep track of it.
 
-    function fight(){ //This function will excute fight when called up;on.
-      var kabal = document.getElementById("kabal")
+
+    function fight (){ //This function will excute fight when called up;on.
+
+
         //fighterOne = kabal;
-      var kratos = document.getElementById("kratos")
         //fighterTwo = kratos;
         //alert(fighterOne.name +":"+fighterOne.health+"  *START*  "+fighterTwo.name+":"+fighterTwo.health); //This alert box will pop up when javascript is run and will notify in the box the players name and  health with the start button in the middile using string conatination.
         for (var i = 0; i < 10; i++) //for loop executes and checks if it looped 10 times meaning 10 rounds then class winner check. variable i = rounds. i < 10 notifies the script if 10 has been reached, i++ adds to i by 1 point every round until reached 10 rounds.
@@ -48,7 +49,8 @@
             fighterOne.health-=f1; //This variable will execute var f1 using math.random to genearte and conflict damage to playeronehealth
             fighterTwo.health-=f2; //this variable will execute var f2 using math.random to generate and conflict damgage too playertwohealth
 
-            console.log(fighterOne.name+": "+fighterOne.health + " " + fighterTwo.name+":"+fighterTwo.health); // this will console.log playeronename and playertwoname plus playeronehealth and player2helath plus concatination.
+
+            //console.log(fighterOne.name+": "+fighterOne.health + " " + fighterTwo.name+":"+fighterTwo.health); // this will console.log playeronename and playertwoname plus playeronehealth and player2helath plus concatination.
 
             //check for victor
             var result = winnerCheck(); //function fight calls on winner check
@@ -56,14 +58,17 @@
             if (result==="no winner")//if variable results === no winner
             {
                 round++;// add 1 more to the round when executed.
-                alert(fighterOne.name+":"+fighterOne.health+"  *ROUND "+round+" OVER"+"*  "+fighterTwo.name+":"+fighterTwo.health); // alert box to notify if round is over plus what round your on.
+                //alert(fighterOne.name+":"+fighterOne.health+"  *ROUND "+round+" OVER"+"*  "+fighterTwo.name+":"+fighterTwo.health); // alert box to notify if round is over plus what round your on.
 
             } else{ //else
-                alert(result); //notifys who won
+                //alert(result); //notifys who won
                 break; //break outside the code function fight and exits
             };
 
           };
+
+        var x = document.getElementById("kabal.p")
+        document.getElementsByClassName("buttonblue").onclick = fight(x)
     };
 
     function winnerCheck(){

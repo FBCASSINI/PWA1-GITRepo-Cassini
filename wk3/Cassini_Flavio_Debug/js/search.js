@@ -58,12 +58,12 @@ PWA-O
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
 			var dbTitleEnd = db[i].indexOf('|'); //seperates the video items by a | pipe
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd); //saves var dbitem to lowercase
+			var dbitem = db[i].toLowerCase().substring(0, dbTitleEnd); //saves var dbitem to lowercase
 
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
 			for (var ii = 0, jj = queryArray.length; ii < jj; ii++) { //for loop to throgh query search words , 11<jj loop keep looping until a match.
-				var qitem = queryArray[ii].tolowercase();
+				var qitem = queryArray[ii].toLowerCase();
 
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
