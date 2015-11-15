@@ -72,7 +72,7 @@
              console.log(result);
              if (result === "no winner")//if variable results === no winner
              {
-                 round++;// add 1 more to the round when executed.
+                 document.getElementById("round_number").innerHTML = "Round " +round++ + " Complete";// add 1 more to the round when executed.
                  //alert(fighterOne.name+":"+fighterOne.health+"  *ROUND "+round+" OVER"+"*  "+fighterTwo.name+":"+fighterTwo.health); // alert box to notify if round is over plus what round your on.
              } else { //else
                  //alert(result); //notifys who won
@@ -94,15 +94,18 @@
         if (fighterOne.health<1 && fighterTwo.health<1) //conditional statement to compare playeronehealth and playertwo health is less then one
         {
             result = "You Both Die"; //candition is true they both die
+            document.getElementById("scores").innerHTML = result
 
         } else if(fighterOne.health<1){//else if playerone health  is less then 1 , playertwo wins
             result =fighterTwo.name+" WINS!!!"// Playertwo wins
+            document.getElementById("scores").innerHTML = result
 
 
 
         } else if (fighterTwo.health<1)////else if playertwo health  is less  then 1 playerone wins
         {
             result = fighterOne.name+" WINS!!!" //playerone wins
+            document.getElementById("scores").innerHTML = result
 
 
         };
